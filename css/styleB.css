@@ -1,0 +1,24 @@
+body {
+    grid-template-areas: 
+    "n n n n n n n n n n n n"
+    "h h h h h h h h h h h h"
+    "d d d d d d d d a a a a"
+    "A A A A B B B B C C C C"
+    "D D D E E E F F F G G G"
+    "f f f f f f f f f f f f"
+    ;
+    /*lite dålig namngivning men what can I say I'm lazy*/
+}
+
+nav{grid-area: n;}
+header{grid-area: h;}
+div{grid-area: d;}
+aside{grid-area: a;}
+#sct-A{grid-area: A;}
+#sct-B{grid-area: B;}
+#sct-C{grid-area: C;}
+#sct-D{grid-area: D;}
+#sct-E{grid-area: E;}
+#sct-F{grid-area: F;}
+#sct-G{grid-area: G;}
+footer{grid-area: f;}

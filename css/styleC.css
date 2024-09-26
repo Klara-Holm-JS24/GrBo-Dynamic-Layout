@@ -1,0 +1,25 @@
+/*Börjar med samma som A*/
+body > * {
+    grid-column-start: auto;
+    grid-row-start: auto;
+}
+
+nav, header, footer {grid-column-end: span 12;}
+
+div {grid-column-end: span 8;}
+aside, #sct-A, #sct-B, #sct-C {grid-column-end: span 4;}
+#sct-D, #sct-E, #sct-F, #sct-G {grid-column-end: span 3;}
+
+@media only screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: 5rem 20rem auto repeat(8, 15rem);
+    }
+    body > *, #sct-A, #sct-B, #sct-C, #sct-D, #sct-E, #sct-F, #sct-G {
+        grid-column-end: span 1;
+    }
+
+}
